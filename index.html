@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horticulture World 🌿</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f3fff3;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2e8b57, #4CAF50);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    nav {
+      background: #38761d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+    nav a:hover { background: #2e8b57; }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2e8b57;
+      border-bottom: 2px solid #2e8b57;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .plant-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .plant-card {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .plant-card img { width: 100%; height: 160px; object-fit: cover; }
+
+    /* NEW Search Box Styles */
+    #search-box input {
+      width: 70%;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #2e8b57;
+      font-size: 16px;
+    }
+    #search-box button {
+      padding: 12px 20px;
+      background: #2e8b57;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result-card {
+      margin-top: 20px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #result-card img {
+      width: 250px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌿 Horticulture World: The Art & Science of Gardening 🌻</h1>
+    <p>Your guide to sustainable planting, landscape design, and plant care.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#basics">Basics</a>
+    <a href="#plants">Plants</a>
+    <a href="#search">Search Plant</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>🌱 What is Horticulture?</h2>
+      <p>Horticulture is the science and art of cultivating plants...</p>
+    </section>
+
+    <!-- Basics Section -->
+    <section id="basics">
+      <h2>💧 Essential Horticulture Basics</h2>
+      <ul>
+        <li><b>Soil Health:</b> Maintain balanced pH and nutrients.</li>
+        <li><b>Water Management:</b> Avoid water stress.</li>
+        <li><b>Pruning:</b> Regular trimming enhances growth.</li>
+      </ul>
+    </section>
+
+    <!-- NEW Search Plant Section -->
+    <section id="search">
+      <h2>🔍 Search Any Plant</h2>
+
+      <div id="search-box">
+        <input id="plantInput" placeholder="Enter plant name (e.g., rose, mango, aloe vera)">
+        <button onclick="searchPlant()">Search</button>
+      </div>
+
+      <div id="result-card"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>✉ Contact Us</h2>
+      <p>Use the form below to reach us.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Horticulture World | 🌿 Grow Green, Live Clean 🌿</p>
+  </footer>
+
+  <script src="plant.js"></script>
+
+</body>
+</html>
