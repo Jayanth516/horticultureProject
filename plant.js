@@ -346,7 +346,7 @@ function searchPlant() {
 
   result.innerHTML = `
     <h2>${plant.name}</h2>
-    <img src="${plant.image}">
+   <img src="${plant.image}" style="width:250px; border-radius:10px;">
     <p><b>Details:</b> ${plant.details}</p>
     <h3>⚠️ Precautions:</h3>
     <ul>${plant.precautions.map(p => `<li>${p}</li>`).join("")}</ul>
